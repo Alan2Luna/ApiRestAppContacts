@@ -8,7 +8,12 @@ const app = express()
 app.set('port', process.env.PORT || 4000)
 
 // middlewares
-app.use(cors())
+app.use(cors({
+    origin: "https://appcontacts.vercel.app/",
+    optionsSuccessStatus: 200,
+    credentials: true,
+    methods:  "GET, PUT, POST, DELETE"
+}))
 app.use(express.urlencoded({extended: false}))
 app.use(express.json())
 
