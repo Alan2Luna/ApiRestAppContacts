@@ -23,7 +23,7 @@ app.use(express.json())
 // })
 
 // Routes
-app.use(require('./routes/index'))
+app.use(require('./routes'))
 app.use(('/api/'), require('./routes/authetication'))
 app.use(('/api/contacts'), require('./routes/contacts'))
 

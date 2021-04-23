@@ -6,3 +6,5 @@ router.get('/prueba', (req, res) => {
         message: 'todo bien'
     })
 })
+
+module.exports = router;
