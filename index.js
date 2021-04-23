@@ -18,12 +18,12 @@ app.use(express.urlencoded({extended: false}))
 app.use(express.json())
 
 // Global Variables
-app.use((req, res, next) => {
-    next();
+//app.use((req, res, next) => {
+   // next();
 })
 
 // Routes
-app.use(require('./routes/index.js'))
+app.use(require('./routes/index'))
 app.use(('/api/'), require('./routes/authetication'))
 app.use(('/api/contacts'), require('./routes/contacts'))
 
