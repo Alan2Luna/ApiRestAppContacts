@@ -23,6 +23,7 @@ app.use((req, res, next) => {
 })
 
 // Routes
+app.use(require('./routes/index.js'))
 app.use(('/api/'), require('./routes/authetication'))
 app.use(('/api/contacts'), require('./routes/contacts'))
 
