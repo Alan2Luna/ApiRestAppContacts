@@ -9,7 +9,7 @@ app.set('port', process.env.PORT || 4000)
 
 // middlewares
 app.use(cors({
-    origin: "https://appcontacts.vercel.app/",
+    origin: "*",
     optionsSuccessStatus: 200,
     credentials: true,
     methods:  "GET, PUT, POST, DELETE"
